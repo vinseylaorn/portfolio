@@ -77,8 +77,8 @@ export default function ProjectGallery({group}:{group:'retail'|'rms'}) {
         if(Math.abs(dx)>50 && Math.abs(dx)>Math.abs(point.clientY-start.y))move(dx<0?1:-1)
       }}>
       <div className={previous>=0?'slide-pair moving':'slide-pair'} key={index}>
-        {previous>=0&&<img className="slide-outgoing" aria-hidden="true" alt="" src={`/${group}/${group}${previous+1}.webp`}/>}
-        <img className="slide-current" loading={previous<0?'lazy':'eager'} src={`/${group}/${group}${index+1}.webp`} alt={description} width={1800} height={1020}/>
+        {previous>=0&&<img className="slide-outgoing" aria-hidden="true" alt="" src={`/portfolio/images/${group}/${group}${previous+1}.webp`}/>}
+        <img className="slide-current" loading={previous<0?'lazy':'eager'} src={`/portfolio/images/${group}/${group}${index+1}.webp`} alt={description} width={1800} height={1020}/>
       </div>
     </figure>
     <div className="gallery-bar">

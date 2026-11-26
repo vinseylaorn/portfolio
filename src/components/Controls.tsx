@@ -10,7 +10,7 @@ useEffect(()=>{const scroll=()=>{let current='home';for(const link of links){con
 return <header className="site-header">
   <div className="wrap bar">
     <a href="#home" className="brand" aria-label="Vinseyla.dev home" onClick={()=>setOpen(false)}>
-      <Image className="profile-avatar" src="/profile.jpg" width={48} height={48} alt=""/><span>vinseyla<em>.dev</em></span>
+      <Image className="profile-avatar" src="/portfolio/images/profile.jpg" width={48} height={48} alt=""/><span>vinseyla<em>.dev</em></span>
     </a>
     <nav id="main-navigation" aria-label="Main navigation" className={open?'open':''}>
       {links.map(link=><a key={link} aria-current={active===link.toLowerCase()?'location':undefined}

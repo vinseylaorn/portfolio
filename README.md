@@ -3,7 +3,7 @@
 Run npm ci and npm run dev, then open the local URL printed by Next.js.
 Run npm run build to type-check and export the production website into out/.
 
-Edit src/data.ts for contact details, skills and project information. Change the professional timeline in src/app/page.tsx. The downloadable PDF in public/ was composed from the supplied profile. The hero and About section use the portrait at public/profile.jpg. Add authentic project captures, repository links and demo URLs when available.
+Edit src/data.ts for contact details, skills and project information. Change the professional timeline in src/app/page.tsx. The downloadable PDF in public/ was composed from the supplied profile. The hero and About section use the portrait at public/images/profile.jpg. Add authentic project captures, repository links and demo URLs when available.
 
 Set NEXT_PUBLIC_PROFILE_STATUS before building to display a confirmed status. The default is empty. For a custom domain, update NEXT_PUBLIC_SITE_URL, public/sitemap.xml and public/robots.txt.
 
