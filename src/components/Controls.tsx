@@ -1,7 +1,7 @@
 'use client'
 import {useEffect,useRef,useState} from 'react'
 import Image from 'next/image'
-import {SquareTerminal,Menu,X,UserRound,AtSign,Send} from 'lucide-react'
+import {ArrowUpRight,Menu,X,UserRound,AtSign,Send} from 'lucide-react'
 import ProjectGallery from './ProjectGallery'
 import {projects,email,github} from '../data'
 const links=['Home','About','Skills','Projects','Experience','Contact']
@@ -17,7 +17,7 @@ return <header className="site-header">
         onClick={()=>setOpen(false)} href={'#'+link.toLowerCase()}>{link}</a>)}
     </nav>
     <div className="actions">
-      <a href={github} className="gh"><SquareTerminal aria-hidden="true"/>GitHub</a>
+      <a href={github} className="gh">GitHub<ArrowUpRight aria-hidden="true"/></a>
       <button className="menu" aria-expanded={open} aria-controls="main-navigation" aria-label={open?'Close navigation':'Open navigation'} onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>
     </div>
   </div>
